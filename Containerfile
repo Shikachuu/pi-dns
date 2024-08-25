@@ -5,6 +5,7 @@ FROM ghcr.io/ublue-os/ucore-minimal:stable
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+COPY adguard /tmp/adguard
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
