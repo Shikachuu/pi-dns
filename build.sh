@@ -11,4 +11,3 @@ mkdir -p /etc/adguardhome
 cp /tmp/adguard/deployment.yaml /etc/adguardhome/deployment.yaml
 
 cp /tmp/adguard/adguard.kube /etc/containers/systemd/adguard.kube
-systemctl enable adguard
