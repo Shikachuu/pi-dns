@@ -1,0 +1,10 @@
+[Unit]
+Description=AdGuard Home deployment
+Before=local-fs.target
+
+[Kube]
+Yaml=/etc/adguardhome/deployment.yaml
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target
