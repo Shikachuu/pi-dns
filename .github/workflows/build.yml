@@ -8,6 +8,8 @@ on:
       - main
     paths-ignore:
       - "**/README.md"
+      - "Makefile"
+      - "imgtools/**"
   workflow_dispatch:
 
 env:
